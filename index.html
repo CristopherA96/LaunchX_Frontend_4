@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pokedex</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="img/favicon.ico" sizes="32x32" type="img/pokedex-png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="http://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,400;1,600;1,700&family=Kumbh+Sans:wght@400;700&family=Lobster&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="row">
+          <div class="logo-row">
+            <img src="img/pokemon_logo.png" alt="logo" class="logo">
+          </div>
+        </div>
+      </header> 
+    <main class="flex">  
+        <article class="searcher">
+                <label class="searcher-label" for="pokeName">Pokémon Name</label>
+                <input type="text" class="searcher-input" placeholder="Enter Pokemon Name" id="pokeName" name="pokeName"><br>
+                <input type="submit" class="searcher-btn"  onclick="fetchPokemon()" value="Search Pokémon">
+                <input type="button" id="pokemon_list" class="searcher-btn" onclick="location.ref='https://pokemon.fandom.com/wiki/List_of_Pok%C3%A9mon' "value="Go to List of Pokémons">   
+        </article>
+        <article class="card">
+            <img src="img/back_2.png" alt="Imagen del card header" class="card-header">
+            <div class="card-body">
+                <img src="img/pokeball.png" alt="Pokebola" id="pokeImg" class="card-body-img" width="150px"><br>
+                <h2 id="pokeNombre" name="pokeNombre" class="card-body-subtitle">Name:</h2><br>
+                <h1 class="card-body-text" id="pokeType" name="pokeType">Type:</h1>
+            </div>
+            <div class="card-footer">
+                <div class="card-footer-social">
+                    <h3>Attack:</h3>
+                    <p id="pokeAttack"></p>
+                </div>
+                <div class="card-footer-social">
+                    <h3>Velocity:</h3>
+                    <p id="pokeVel"></p>
+                </div>
+                <div class="card-footer-social">
+                    <h3>HP:</h3>
+                    <p id="pokeHP"></p>
+                </div>
+                <div class="card-footer-social">
+                    <h3>Defense:</h3> <br>
+                    <p id="pokeDeffense"></p>
+                </div>
+                <div class="card-footer-social">
+                    <h3>Special Attack:</h3>
+                    <p id="pokeSpeAttack"></p>
+                </div>
+                <div class="card-footer-social">
+                    <h3>Special Defense:</h3>
+                    <p id="pokeSpeDef"></p>
+                </div>
+            </div>
+        </article>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
