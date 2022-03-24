@@ -1,0 +1,221 @@
+:root {
+    --yellow:  #fbcb04;
+    --dark-blue: #3157b2;
+    --very-dark-desaturated: hsl(229, 23%, 23%);
+    --dark-gray: #969696;
+  }
+
+  .center {
+    display: block;
+    margin-left: center;
+    margin-right: center;
+  }
+  
+  .container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    height: 400px;
+}
+  html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+  }
+  
+  body {
+    font-family: 'Pokemon Solid', sans-serif;
+    font-weight: normal;
+    background-color: red;
+    background-image: url("../img/background.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  header {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #b5b5b5;
+}
+
+.logo-row {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+  
+  .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 70vh;
+  }
+    
+  .searcher {
+    background-color: var(--yellow);
+    border-radius: 20px 40px 60px 80px;
+    -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.315);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.315);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding: 10px 0;
+    width: 450px;
+  }
+  
+  .searcher-label {
+    color: var(--very-dark-desaturated);
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 2px;
+  }
+  
+  .searcher-input {
+    color: var(--dark-blue);
+    border-radius: 16px;
+    border: 3px solid var(--dark-gray);
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: 'Kumbh Sans', sans-serif;
+    margin-top: 2px;
+    margin-bottom: 4px;
+    text-align: center;
+    padding: 11px 5px;
+    width: 219px;
+    height: 40px;
+  }
+  
+  .searcher-btn {
+    background-color: var(--dark-blue);
+    color: white;
+    margin: 2px 0 4px 0;
+    padding: 11px 5px;
+    border-radius: 16px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    width: 219px;
+    height: 40px;
+  }
+  
+  .card {
+    background-color: #eaf2e3;
+    width: 420px;
+    height: 450px;
+    border-radius: 20px 40px 40px 40px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.315);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.315);
+  }
+  
+  .card-header {
+    width: 100%;
+    display: block;
+  }
+  
+  .card-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.383);
+  }
+  
+  .card-body-img {
+    border-radius: 50%;
+    margin-top: calc(-220px - 2px);
+    background-color: white;
+    -webkit-box-shadow: 0px 1px 0px 3px rgba(0, 0, 0, 0.315);
+    box-shadow: 0px 1px 0px 3px rgba(0, 0, 0, 0.315);
+  }
+  
+  .card-body-subtitle {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 2rem;
+    color: var(--very-dark-desaturated);
+    text-transform: capitalize;
+  }
+  
+  .card-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  
+  .card-footer-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 30px;
+    margin: 0 30px;
+  }
+  
+  .card-footer-social h3 {
+    margin-top: 2px;
+    margin-bottom: 1px;
+    width: 116px;
+    color: var(--Very-dark-desaturated);
+    font-size: 1.4rem;
+  }
+  
+  .card-footer-social p {
+    margin-top: 2px;
+    margin-left: 30px;
+    color: var(--Dark-grayish-blue);
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .card-body-text {
+    color: var(--dark-blue);
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 0.5rem;
+  }
+  
